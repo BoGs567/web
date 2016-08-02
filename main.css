@@ -1,0 +1,70 @@
+/*comment; In CSS we always have a fixed relationship between selectors and rules;
+ 
+ selector{
+	Rule
+	}
+
+*/  
+
+/*CSS = Cascading style sheets -- we can cascade, and overwrite as we move on. 
+so out of two different rules on the same selector, the latter will be effecting the actual webpage  
+*/
+body{
+	background: white;
+	font-family: arial; 
+
+}
+
+h3 {
+	color: blue;
+	background: yellow; 
+}
+
+h4{
+padding: 5px;
+
+}
+
+a{
+	color: teal; 
+}
+
+p{
+	color: 600; 
+	padding: 5px; 
+}
+.primary{
+	padding: 15px; 
+	background: black; 
+}
+
+.secondary{ /*. here means we are looking or a class "secondary" menas we are focusing on the class "secondary" wherever this css file is connected*/
+	background: none;
+	color: #365;  
+}
+
+#special{
+	color: yellow; 
+	background: blue; 
+	padding: 5px; 
+}
+
+.dropdown{
+	background-color: red;  
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+display: none;
+position: absolute;
+background-color: red; 
+min-width: 160px;
+box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2)
+padding: 12px 16px; 
+z-index: 1; 
+}
+
+.dropdown:hover .dropdown-content{
+	display: block; 
+}
